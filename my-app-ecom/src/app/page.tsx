@@ -1,7 +1,7 @@
 import DarkHeader from "./components/dark-header";
 import Carausel from "./components/caraousel";
 import Editors from "./components/editorspick";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 import GreenDiv from "./components/green-div";
 import LightHeader from "./components/lightheader";
 import ProductCard from "./components/products-card";
@@ -18,7 +18,8 @@ export default function Home(){
       <ProductCard/>
       <GreenDiv/>
       <Whitediv/>
-      {/* <Footer /> */}
+      <Footer />
     </div>
+
   )
 }
