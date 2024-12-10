@@ -1,7 +1,7 @@
 import Image from "next/image";
 import couples from "@/images/asian-woman-man-with-winter-clothes 1.png";
 
-export default function Hero() {
+export default function Fluid() {
   return (
     <div className="w-full h-auto absolute top-[3810px]">
       <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-[30px] px-4 lg:px-0">
