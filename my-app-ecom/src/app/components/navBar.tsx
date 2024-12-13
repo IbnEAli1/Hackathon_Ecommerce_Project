@@ -5,13 +5,13 @@ import user from "@/images/Vector (12).png";
 import search from "@/images/icn settings icn-xs (6).png";
 import cart from "@/images/icn settings icn-xs (7).png";
 import mail from "@/images/icn settings icn-xs (8).png";
-import { useState } from "react"; // Import useState for toggling hamburger menu
+import { useState } from "react"; 
 
-export default function LightHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling the menu
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu state on hamburger click
+    setIsMenuOpen(!isMenuOpen); 
   };
 
   return (

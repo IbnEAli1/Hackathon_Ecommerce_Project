@@ -2,13 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import DarkHeader from "./components/dark-header";
-import Carausel from "./components/caraousel";
-import Editors from "./components/editorspick";
-import GreenDiv from "./components/green-div";
-import LightHeader from "./components/lightheader";
-import ProductCard from "./components/products-card";
-import Fluid from "./components/fluid";
-import Footer from "./components/footer";
+import Navbar from "./components/navBar";
+
 
 
 const geistSans = localFont({
@@ -38,14 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <DarkHeader />
-        <LightHeader />
+        <Navbar/>
          {children}
-         <Carausel />
-         <Fluid/>
-         <Editors/>
-         <GreenDiv/>
-         <ProductCard/>
-         <Footer/>
+  
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
-import Image from "next/image"
-import phone from "@/images/icn settings icn-xs.png"
+import Image from "next/image";
+import phone from "@/images/icn settings icn-xs.png";
 import mail from "@/images/icn settings icn-xs (1).png";
 import insta from "@/images/icn settings icn-xs (2).png";
 import yout from "@/images/icn settings icn-xs (3).png";
@@ -10,15 +10,20 @@ export default function DarkHeader() {
   return (
     <div className="lg:block hidden w-[1440px] h-[58px] bg-[#252B42]">
       <div className="flex justify-between items-center w-full h-full px-[24px]">
-      {/* left side */}
+        {/* left side */}
         <div className="flex gap-[10px]">
           <button className="flex items-center gap-[5px] p-[10px] text-white">
             <Image src={phone} alt="phone" width={16} height={16} />
-            <span className="font-Montserrat text-[14px] font-bold"> (92) 317 2776177</span>
+            <span className="font-Montserrat text-[14px] font-bold">
+              {" "}
+              (92) 317 2776177
+            </span>
           </button>
           <button className="flex items-center gap-[5px] p-[10px] text-white rounded-[5px]">
             <Image src={mail} alt="mail" width={16} height={16} />
-            <span className="font-Montserrat text-[14px] font-bold ">akazbaba6@gmail.com</span>
+            <span className="font-Montserrat text-[14px] font-bold ">
+              akazbaba6@gmail.com
+            </span>
           </button>
         </div>
 

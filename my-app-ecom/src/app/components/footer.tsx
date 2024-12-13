@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 text-gray-700">
-      <div className="container mx-auto px-6 py-10">
+  <footer className="w-[1440px] h-[488px] absolute top-[3550px] bottom-[50px]  left-[1px] border bg-[rgba(255,_255,_255,_1)]">
+      <div className="container mx-auto px-6 py-10 ">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex flex-col bg-[#fafafa] md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
           <img
             src="./icons.png"

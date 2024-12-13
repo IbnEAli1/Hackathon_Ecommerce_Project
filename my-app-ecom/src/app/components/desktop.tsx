@@ -4,16 +4,16 @@ import women from "@/images/filter (1).png";
 import div1 from "@/images/filter (2).png";
 import div2 from "@/images/filter (3).png";
 
-export default function Editors() {
+export default function Desktop() {
   return (
-    <div className="w-full flex justify-center py-[10px] absolute top-[850px] bg-[#f5f5f5]">
+    <div className="w-full flex justify-center py-[10px] absolute top-[750px] bg-[#FAFAFA]">
       <div className="w-[1050px] h-auto flex flex-col gap-[30px] bg-[#FAFAFA] p-[40px]">
         {/* Title Section */}
         <div className="flex flex-col items-center gap-[10px]">
-          <h3 className="font-Montserrat font-semibold text-[24px] leading-[32px]">
+          <h3 className="font-Montserrat tracking-wide font-bold text-[24px] leading-[32px]">
             EDITOR’S PICK
           </h3>
-          <p className="w-[347px] h-auto font-Montserrat font-normal text-[14px] leading-[20px] text-[#737373] text-center">
+          <p className="w-[347px] h-auto font-Montserrat tracking-wide text-[14px] font-bold leading-[20px] text-[#737373] text-center">
             Problems trying to resolve the conflict between
           </p>
         </div>

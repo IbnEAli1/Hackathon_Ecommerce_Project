@@ -1,11 +1,11 @@
 import Image from "next/image";
 import couples from "@/images/asian-woman-man-with-winter-clothes 1.png";
 
-export default function Fluid() {
+export default function Hero3() {
   return (
-    <div className="w-full h-auto absolute top-[3810px]">
+    <div className="w-full h-auto absolute top-[2180px]">
       <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-[30px] px-4 lg:px-0">
-        {/* Image Section */}
+        
         <div className="relative w-full lg:w-[707px] h-[400px] lg:h-[682px] flex justify-center">
           <Image
             src={couples}
