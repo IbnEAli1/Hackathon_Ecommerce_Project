@@ -109,7 +109,7 @@ const Footer = () => {
 </div>
 {/* last section  */}
         <div className="mt-10 border-t pt-4 text-center text-sm text-[#737373]">
-          Made With Love By Finland | All Rights Reserved By AkazBaba-2024
+          Made With Love By Finland | All Rights Reserved By <a href="https://www.youtube.com/@akazbaba" target="_blank">AkazBaba-2024 </a>
         </div>
       </div>
     </footer>
