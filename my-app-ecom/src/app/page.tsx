@@ -1,10 +1,11 @@
 // import Footer from "./components/footer";
 
-import CardText from "./components/cards-text";
+import Card from "./components/hero4.card";
 import Desktop from "./components/desktop";
 import Hero from "./components/hero";
 import Hero2 from "./components/hero2";
 import Hero3 from "./components/hero3";
+import { Feature } from "./components/feature";
 
 
 export default function Home(){
@@ -14,7 +15,8 @@ export default function Home(){
         <Desktop/>
         <Hero2/>
         <Hero3/>
-        <CardText />
+        <Card />
+        <Feature />
     </div>
 
   )

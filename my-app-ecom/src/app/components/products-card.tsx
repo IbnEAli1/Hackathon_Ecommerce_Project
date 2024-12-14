@@ -1,6 +1,6 @@
 import Image from "next/image";
 import picture1 from "@/images/product-cover-5.png";
-import CardText from "./cards-text";
+import CardText from "./hero4.card";
 import pic2 from "@/images/product-cover-5 (1).png";
 import pic3 from "@/images/product-cover-5 (2).png";
 import pic4 from "@/images/product-cover-5 (3).png";

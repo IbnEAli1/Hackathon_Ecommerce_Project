@@ -1,5 +1,6 @@
 import Image from "next/image"
-import women from "@/images/shop-hero-1-product-slide-1 (1).jpg"
+import women from "@/images/shop-hero-1-product-slide-1 (1).jpg";
+import greenman from "@/images/shop-hero-2-png-picture-1.png";
 
 export default function Hero(){
     return(
@@ -7,8 +8,6 @@ export default function Hero(){
           <div className="w-[1440px] h-[716px]">
                  <Image src={women} alt="women"/>
           </div>
-         
-
       <div className="absolute flex flex-col justify-center left-[100px] top-[100px] items-start gap-[35px] px-6 lg:px-16 z-10">
         <h5 className="font-Montserrat font-semibold text-[16px] leading-[24px] text-white">
           SUMMER 2020
