@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import Hero2 from "./components/hero2";
 import Hero3 from "./components/hero3";
 import { Feature } from "./components/feature";
+import Footer from "./components/footer";
 
 
 export default function Home(){
@@ -17,6 +18,7 @@ export default function Home(){
         <Hero3/>
         <Card />
         <Feature />
+        <Footer />
     </div>
 
   )

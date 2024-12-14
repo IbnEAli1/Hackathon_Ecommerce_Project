@@ -1,10 +1,10 @@
 import Image from "next/image";
 import phone from "@/images/icn settings icn-xs.png";
-import mail from "@/images/icn settings icn-xs (1).png";
-import insta from "@/images/icn settings icn-xs (2).png";
-import yout from "@/images/icn settings icn-xs (3).png";
-import fb from "@/images/icn settings icn-xs (4).png";
-import twit from "@/images/icn settings icn-xs (5).png";
+import mail from "@/images/em.png";
+import insta from "@/images/insta.png";
+import yout from "@/images/yt.png";
+import fb from "@/images/fb.png";
+import twit from "@/images/tw.png";
 
 export default function DarkHeader() {
   return (

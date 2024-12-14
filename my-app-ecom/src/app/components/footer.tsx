@@ -1,84 +1,98 @@
 import React from "react";
+import Image from "next/image";
+import facebook from "@/images/facebook.png";
+import insta from "@/images/instagram.png";
+import twitter from "@/images/twitter.png";
 
 const Footer = () => {
   return (
-  <footer className="w-[1440px] h-[488px] absolute top-[3550px] bottom-[50px]  left-[1px] border bg-[rgba(255,_255,_255,_1)]">
-      <div className="container mx-auto px-6 py-10 ">
-        {/* Top Section */}
-        <div className="flex flex-col bg-[#fafafa] md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
-          <img
-            src="./icons.png"
-            alt="Icons"
-            className="h-8 w-auto"
-          />
-        </div>
-
-        {/* Middle Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-10">
-          {/* Social Media Links */}
-          <div>
-            <h3 className="font-semibold text-gray-800">Follow Us</h3>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-blue-500 hover:text-blue-600">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-500">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-pink-500 hover:text-pink-600">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
+    <footer className="w-[1440px] h-[488px] absolute top-[5200px] bottom-[50px] left-[1px] border ">
+      <div className="mx-auto px-6 py-10 bg-[#fafafa] w-[1440px] h-[142px]">
+        {/* bandage bar */}
+        <div className="flex flex-col  md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <h2 className="text-2xl font-bold text-[#252B42] ">Bandage</h2>
+          <div className=" flex gap-6">
+            <span>
+              <Image
+              src={facebook}
+              alt="fb"
+              height={20}
+              width={20}/>
+            </span>
+            <span>
+              <Image
+              src={insta}
+              alt="insta"
+              height={20}
+              width={20}/>
+            </span>
+            <span>
+              <Image
+              src={twitter}
+              alt="tw"
+              height={20}
+              width={20}/>
+            </span>
           </div>
-
+        </div>
+        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mt-10 w-[1440px] h-[272px]">
           {/* Company Info */}
           <div>
-            <h3 className="font-semibold text-gray-800">Company Info</h3>
+            <h3 className="font-semibold text-[#252B42] ">Company Info</h3>
             <ul className="mt-4 space-y-2">
-              <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
-              <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
-              <li><a href="#" className="hover:text-blue-500">Blog</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">About Us</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Carrier</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">We are hiring</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Blog</a></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold text-gray-800">Legal</h3>
+            <h3 className="font-semibold text-[#252B42] ">Legal</h3>
             <ul className="mt-4 space-y-2">
-              <li><a href="#" className="hover:text-blue-500">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-blue-500">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-blue-500">Licenses</a></li>
-              <li><a href="#" className="hover:text-blue-500">Cookie Policy</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Privacy Policy</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Terms of Service</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Licenses</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Cookie Policy</a></li>
             </ul>
           </div>
 
           {/* Features */}
           <div>
-            <h3 className="font-semibold text-gray-800">Features</h3>
+            <h3 className="font-semibold text-[#252B42] ">Features</h3>
             <ul className="mt-4 space-y-2">
-              <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
-              <li><a href="#" className="hover:text-blue-500">User Analytics</a></li>
-              <li><a href="#" className="hover:text-blue-500">Live Chat</a></li>
-              <li><a href="#" className="hover:text-blue-500">Unlimited Support</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Business Marketing</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">User Analytics</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Live Chat</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Unlimited Support</a></li>
+            </ul>
+          </div>
+{/* Resource  */}
+          <div>
+            <h3 className="font-semibold text-[#252B42] ">Resources</h3>
+            <ul className="mt-4 space-y-2">
+              <li><a href="#" className="text-[#737373] text-[14px]">IOS & Android</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Watch a Demo</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">Customers</a></li>
+              <li><a href="#" className="text-[#737373] text-[14px]">API</a></li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className="font-semibold text-gray-800">Get In Touch</h3>
+            <h3 className="font-semibold text-[#252B42] ">Get In Touch</h3>
             <form className="mt-4">
               <div className="flex">
-              <input
-  type="email"
-  id="email"
-  name="email"
-  placeholder="Your Email"
-  className="p-2 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:ring-blue-300"
-  autoComplete="email"
-/>
-
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  className="p-2 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:ring-blue-300"
+                  autoComplete="email"
+                />
                 <button
                   type="submit"
                   className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600"
@@ -86,16 +100,16 @@ const Footer = () => {
                   Subscribe
                 </button>
               </div>
-              <p className="mt-2 text-sm text-gray-500">
+              <p className="mt-2 text-sm text-[#737373]">
                 Lore ipsum dolor sit amet.
               </p>
             </form>
           </div>
         </div>
-
-        {/* Bottom Section */}
-        <div className="mt-10 border-t pt-4 text-center text-sm text-gray-500">
-          Made With Love By Finland | All Rights Reserved
+</div>
+{/* last section  */}
+        <div className="mt-10 border-t pt-4 text-center text-sm text-[#737373]">
+          Made With Love By Finland | All Rights Reserved By AkazBaba-2024
         </div>
       </div>
     </footer>
