@@ -7,7 +7,7 @@ import twitter from "@/images/twitter.png";
 const Footer = () => {
   return (
     <footer className="w-[1440px] h-[488px] absolute top-[5200px] bottom-[50px] left-[1px] border ">
-      <div className="mx-auto px-6 py-10 bg-[#fafafa] w-[1440px] h-[142px]">
+      <div className=" mx-auto px-[40px] py-[40px] bg-[#fafafa] w-[1440px] h-[142px]">
         {/* bandage bar */}
         <div className="flex flex-col  md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <h2 className="text-2xl font-bold text-[#252B42] ">Bandage</h2>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mt-10 w-[1440px] h-[272px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-10 w-[1440px] h-[272px]">
           {/* Company Info */}
           <div>
             <h3 className="font-semibold text-[#252B42] ">Company Info</h3>
