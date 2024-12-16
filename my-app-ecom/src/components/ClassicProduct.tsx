@@ -32,8 +32,8 @@ export default function ClassicProduct() {
                     <Image
                         src="/classic.png" // Make sure this is the correct path
                         alt="Vita Classic Product"
-                        width={500} // Adjust the width as needed
-                        height={500} // Adjust the height as needed
+                        width={420} // Adjust the width as needed
+                        height={420} // Adjust the height as needed
                         className="max-w-full h-auto object-contain"
                     />
                 </div>
