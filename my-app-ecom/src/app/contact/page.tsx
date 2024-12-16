@@ -53,8 +53,8 @@ export default function Contact() {
                         height={70}
                     />
                     <div className="font-bold mt-4 text-center grid justify-items-center">
-                        <p className=" text-[#252B42] tracking-md text-[16px]">georgia.young@example.com</p>
-                        <p className=" text-[#252B42] tracking-md text-[16px]">georgia.young@ple.com</p>
+                        <p className=" text-[#252B42] tracking-md text-[16px]">akazbaba6@gmail.com</p>
+                        <p className=" text-[#252B42] tracking-md text-[16px]">www.youtube.com/@akazbaba</p>
                         <h3 className="text-[#252B42] tracking-md text-[14px] mt-4">Get Support</h3>
 
                         <button className="mt-4 text-[#23A6F0] border border-[#23A6F0] rounded-full py-3 px-8 hover:text-white hover:bg-[#23A6F0]">Submit Request</button>
@@ -68,8 +68,8 @@ export default function Contact() {
                         height={60}
                     />
                     <div className="font-bold mt-4 text-center grid justify-items-center">
-                        <p className=" tracking-md text-[16px]">georgia.young@example.com</p>
-                        <p className=" tracking-md text-[16px]">georgia.young@ple.com</p>
+                        <p className=" tracking-md text-[16px]">akazbaba6@gmail.com</p>
+                        <p className=" tracking-md text-[16px]">www.youtube.com/@akazbaba</p>
                         <h3 className="tracking-md text-[14px] mt-4">Get Support</h3>
 
                         <button className="mt-4 text-[#23A6F0] border border-[#23A6F0] rounded-full py-3 px-8 hover:text-white hover:bg-[#23A6F0]">Submit Request</button>
@@ -83,8 +83,8 @@ export default function Contact() {
                         height={70}
                     />
                     <div className="font-bold mt-4 text-center grid justify-items-center">
-                        <p className=" text-[#252B42] tracking-md text-[16px]">georgia.young@example.com</p>
-                        <p className=" text-[#252B42] tracking-md text-[16px]">georgia.young@ple.com</p>
+                        <p className=" text-[#252B42] tracking-md text-[16px]">akazbaba6@gmail.com</p>
+                        <p className=" text-[#252B42] tracking-md text-[16px]">www.youtube.com/@akazbaba</p>
                         <h3 className="text-[#252B42] tracking-md text-[14px] mt-4">Get Support</h3>
 
                         <button className="mt-4 text-[#23A6F0] border border-[#23A6F0] rounded-full py-3 px-8 hover:text-white hover:bg-[#23A6F0]">Submit Request</button>
