@@ -35,7 +35,7 @@ export default function Header() {
                     <div className="flex gap-6">
                         <div className="flex gap-2">
                             <Image src={phone} alt="Phone" width={16} height={16} />
-                            <p>(92) 317 277-6177)</p>
+                            <p>(92) 317 277-6177</p>
                         </div>
                         <div className="flex gap-2">
                             <Image src={email} alt="Email" width={16} height={16} />

@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hackathone Template 5 by AkazBaba",
+  title: "Hackathon Template 5 by AkazBaba",
   description: "prepared by Akazbaba",
 };
 
