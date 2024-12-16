@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import logo from "@/image/logo.png"
 
 export default function Footer() {
     const pathname = usePathname();
@@ -119,9 +120,18 @@ export default function Footer() {
             </div>
 
             {/* Bottom Section */}
-            <div className="w-full py-6 font-bold text-[#737373] text-[14px] tracking-md bg-[#FAFAFA]">
-                <p className='text-center sm:text-left px-6 sm:px-8 lg:px-32 md:px-16'>
-                    Made With Love By Finland. All Rights Reserved.
+            <div className="w-full py-6 font-bold text-[#737373] text-[14px] text-center  tracking-md bg-[#FAFAFA]">
+            Made With Love By Akazbaba. 
+            <br /> All Rights Reserved by Akazbaba.
+            <p className="flex flex-col text-center items-center px-6 sm:px-8 lg:px-32 md:px-16">
+                    <a href="https://www.youtube.com/@akazbaba" target='_blank'>
+                    <Image
+                    src={logo}
+                    alt='logo'
+                    height={100}
+                    width={100}
+                    />
+                    </a>
                 </p>
             </div>
         </footer>

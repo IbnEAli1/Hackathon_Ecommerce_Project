@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    image: "./bsp1.jpg",
+    image: "/bsp1.jpg",
     title: "Graphic Design",
     category: "English Department",
     price: "$11.64",
@@ -10,7 +10,7 @@ export const products = [
   },
   {
     id: 2,
-    image: "./bsp2.jpg",
+    image: "/bsp2.jpg",
     title: "Graphic Design",
     category: "English Department",
     price: "$11.64",
