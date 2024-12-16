@@ -1,4 +1,4 @@
-import { bestProducts } from "@/helper";
+import { bestProducts } from "@/image/helper";
 import Image from "next/image";
 
 export default function BestProduct() {

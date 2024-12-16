@@ -1,4 +1,4 @@
-import { team2 } from "@/helper";
+import { team2 } from "@/image/helper";
 import Image from "next/image";
 
 export default function TeamMember() {

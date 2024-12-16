@@ -1,4 +1,4 @@
-import { team } from "@/helper";
+import { team } from "@/image/helper";
 import Image from "next/image";
 
 export default function AboutUs() {

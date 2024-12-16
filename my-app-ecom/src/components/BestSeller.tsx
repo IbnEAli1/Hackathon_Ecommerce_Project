@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { products } from "@/helper";
+import { products } from "@/image/helper";
+
 
 export default function BestSeller() {
     return (
@@ -17,14 +18,15 @@ export default function BestSeller() {
                 </p>
             </div>
 
-            {/* Product Grid */}
+
+
+{/* products  */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
                 {products.map((product) => (
                     <div
                         key={product.id}
                         className="flex flex-col items-center text-center font-bold"
                     >
-                        {/* Product Image */}
                         <div className="relative">
                             <Image
                                 src={product.image}
@@ -35,9 +37,9 @@ export default function BestSeller() {
                             />
                         </div>
 
-                        {/* Product Details */}
                         <div className="mt-4">
-                            {/* Title and Category */}
+
+
                             <h4 className="text-[16px] text-[#252B42] font-bold">
                                 {product.title}
                             </h4>
@@ -45,7 +47,8 @@ export default function BestSeller() {
                                 {product.category}
                             </p>
 
-                            {/* Price Section */}
+
+
                             <div className="flex justify-center items-center mt-2">
                                 <p className="text-sm text-[#BDBDBD] mr-2">
                                     {product.originalPrice}
@@ -55,15 +58,16 @@ export default function BestSeller() {
                                 </p>
                             </div>
 
-                            {/* Colors Section */}
+
+
                             <div className="flex justify-center items-center mt-2 space-x-2">
                                 {product.colors.map((color, index) => (
                                     <Image
                                         key={index}
-                                        src={`/${color}.svg`} // Use custom SVG or PNG paths
+                                        src={`/${color}.svg`} 
                                         alt={`Color ${index + 1}`}
-                                        width={16} // Set width for icons
-                                        height={16} // Set height for icons
+                                        width={16} 
+                                        height={16} 
                                         className="rounded-full"
                                     />
                                 ))}

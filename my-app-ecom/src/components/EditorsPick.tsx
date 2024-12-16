@@ -1,9 +1,14 @@
 import Image from 'next/image';
+import men from "@/image/men.png"
+import acc from "@/image/acc.png";
+import kid from "@/image/kid.png";
+import women from "@/image/women.png";
+
 
 export default function EditorsPick() {
     return (
         <section className="bg-[#FAFAFA] pt-20 px-6 sm:px-8 md:px-16 lg:px-32">
-            {/* Section Title */}
+  
             <div className="text-center mb-8">
                 <h2 className="text-[24px] font-bold tracking-tiny text-[#252B42]">
                     EDITOR&apos;S PICK
@@ -13,13 +18,16 @@ export default function EditorsPick() {
                 </p>
             </div>
 
-            {/* Grid Layout */}
             <div className='container w-full mt-2'>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                {/* Men */}
+             
+
+
+
+             
                 <div className="relative group md:col-span-2">
                     <Image
-                        src="/men.jpg"
+                        src={men}
                         alt="Men"
                         width={1000}
                         height={1000}
@@ -30,10 +38,13 @@ export default function EditorsPick() {
                     </div>
                 </div>
 
-                {/* Women - Larger Image */}
+
+
+
+
                 <div className="relative group ">
                     <Image
-                        src="/women.jpg"
+                        src={women}
                         alt="Women"
                         width={1000}
                         height={1000}
@@ -45,10 +56,14 @@ export default function EditorsPick() {
                 </div>
 
                 <div className='grid gap-4 lg:grid-cols-1 grid-cols-1 sm:grid-cols-2 md:col-span-3 lg:col-span-1'>
-                    {/* Accessories */}
+                   
+
+
+
+
                     <div className="relative group">
                         <Image
-                            src="/accessories.jpg"
+                            src={acc}
                             alt="Accessories"
                             width={1000}
                             height={1000}
@@ -59,10 +74,12 @@ export default function EditorsPick() {
                         </div>
                     </div>
 
-                    {/* Kids */}
+            
+            
+
                     <div className="relative group">
                         <Image
-                            src="/kids.jpg"
+                            src={kid}
                             alt="Kids"
                             width={1000}
                             height={1000}

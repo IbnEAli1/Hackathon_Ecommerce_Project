@@ -16,14 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "UI/UX Hackathon",
-  description: "By Sir Ameen Alam",
-  icons: {
-    icon: ['/favicon.ico?v=4'],
-    apple: ['/apple-touch-icon.png?v=4'],
-    shortcut: ['/apple-touch-icon.png']
-  },
-  manifest: '/site.webmanifest'
+  title: "Hackathone Template 5 by AkazBaba",
+  description: "prepared by Akazbaba",
 };
 
 export default function RootLayout({

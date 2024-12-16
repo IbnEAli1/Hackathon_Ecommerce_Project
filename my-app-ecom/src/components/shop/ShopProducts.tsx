@@ -1,4 +1,4 @@
-import { products2 } from "@/helper";
+import { products2 } from "@/image/helper";
 import Image from "next/image";
 
 export default function ShopProducts() {
