@@ -8,9 +8,8 @@ import twit from "@/images/tw.png";
 
 export default function DarkHeader() {
   return (
-    <div className="lg:block hidden w-[1440px] h-[58px] bg-[#252B42]">
-      <div className="flex justify-between items-center w-full h-full px-[24px]">
-        {/* left side */}
+    <div className="sm:block hidden lg:w-[1440px] lg:h-[58px] bg-[#252B42]">
+      <div className="px-8 py-4 flex items-center justify-center md:justify-between text-sm font-bold">
         <div className="flex gap-[10px]">
           <button className="flex items-center gap-[5px] p-[10px] text-white">
             <Image src={phone} alt="phone" width={16} height={16} />
@@ -46,3 +45,6 @@ export default function DarkHeader() {
     </div>
   );
 }
+
+
+

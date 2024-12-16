@@ -1,63 +1,134 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";  // Import Link from Next.js
-import user from "@/images/Vector (12).png";
-import search from "@/images/icn settings icn-xs (6).png";
-import cart from "@/images/icn settings icn-xs (7).png";
-import mail from "@/images/icn settings icn-xs (8).png";
-import { useState } from "react"; 
+import Link from "next/link";
+import React, { useState } from "react";
+import { CiUser } from "react-icons/ci";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline, IoSearchOutline } from "react-icons/io5";
+import DarkHeader from "./dark-header";
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); 
-  };
-
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="lg:w-[1437px] lg:h-[58px] w-full h-[532px] lg:absolute lg:top-[70px]">
-      <div className="absolute left-[38px] flex text-center gap-[10px] py-3">
-        <h3 className="font-Montserrat font-semibold leading-[32px] text-[24px] sm:hiddden text-[#252B42]">Bandage</h3>
-      </div>
+    <>
+      <DarkHeader />
+      <nav className="bg-white shadow-md">
+        <div className="container mx-auto flex items-center justify-around px-4 py-4 sm:px-6 lg:px-8">
+          <h1 className="sm:text-left text-lg font-bold text-[">
+            <Link href="/">Bandage</Link>
+          </h1>
 
-      {/* Desktop Menu */}
-      <div className="w-[1155px] h-[58px] absolute left-[265px] hidden lg:block">
-        <div className="w-[361px] h-[25px] absolute top-[20.5px] flex gap-[15px]">
-          <ul className="font-Montserrat font-semibold text-[14px] text-[#737373] gap-[15px] leading-[24px] flex justify-center">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/pages">Pages</Link></li>
-          </ul>
-        </div>
-
-        {/* Login / Register section */}
-        <div className="w-[324px] h-[54px] absolute top-[2px] left-[832px] flex justify-between items-center">
-          <div className="w-[166px] h-[54px] p-[15px] flex items-center gap-[5px]">
-            <div className="w-[12px] h-[12px] mt-[6px]">
-              <Image src={user} alt="user" width={12} height={12} />
-            </div>
-            <span className="w-[119px] h-[24px] font-Montserrat font-semibold text-[14px] leading-[24px] text-[#23A6F0]">
-              Login / Register
-            </span>
+          <div className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
+              Home
+            </Link>
+            <Link href="/shop" className="text-gray-700 hover:text-gray-900">
+              Shop
+            </Link>
+            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+              About
+            </Link>
+            <Link href="/detail" className="text-gray-700 hover:text-gray-900">
+              Blog
+            </Link>
+            <Link href="/contact" className="text-gray-700 hover:text-gray-900">
+              Contact{" "}
+            </Link>
+            <a href="#" className="text-gray-700 hover:text-gray-900">
+              Pages
+            </a>
           </div>
 
-          {/* Icons section */}
-          <ul className="flex gap-[15px] items-center">
-            <li>
-              <Image src={search} alt="search" width={16} height={16} />
-            </li>
-            <li>
-              <Image src={cart} alt="cart" width={16} height={16} />
-            </li>
-            <li>
-              <Image src={mail} alt="mail" width={16} height={16} />
-            </li>
-          </ul>
+          <div className="flex items-center justify-end gap-4">
+            <div className="flex justify-center text-blue-500 items-center">
+              <CiUser className="hidden xl:block text-[16px] text-blue-500" />
+              <h4>Login / Register</h4>
+            </div>
+            <a
+              href="#"
+              className="text-sm font-semibold  hover:text-gray-900 pr-2"
+            ></a>
+            <div className=" justify-center hidden xl:flex items-center gap-4 text-blue-500">
+              <IoSearchOutline className="text-xl" />
+              <IoCartOutline className="text-xl" />
+              <FaRegHeart className="text-[16px]" />
+            </div>
+          </div>
+
+          <button
+            className="md:hidden text-gray-600"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
+          </button>
         </div>
-      </div>
-    </div>
+        {isOpen && (
+          <div className="md:hidden flex justify-center items-center gap-5 px-10 py-2 bg-gray-100">
+            <Link
+              href="/"
+              className="text-gray-700 font-medium hover:text-blue-600"
+            >
+              Home
+            </Link>
+            <Link
+              href="/shop"
+              className="text-gray-700 font-medium hover:text-blue-600"
+            >
+              Shop
+            </Link>
+            <Link
+              href="/about"
+              className="text-gray-700 font-medium hover:text-blue-600"
+            >
+              About
+            </Link>
+            
+            <Link
+              href="/detail"
+              className="text-gray-700 font-medium hover:text-blue-600"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-700 font-medium hover:text-blue-600"
+            >
+              Contact
+            </Link>
+          </div>
+        )}
+      </nav>
+    </>
   );
-}
+};
+
+export default Navbar;
