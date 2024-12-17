@@ -16,8 +16,8 @@ export default function Contact() {
                         We know how large objects will act, but things on a small scale
                     </p>
 
-                    <h3 className="tracking-tiny font-bold text-[24px] text-[#252B42] mt-4">Phone ; +451 215 215</h3>
-                    <h3 className="tracking-tiny font-bold text-[24px] text-[#252B42] mt-2">Fax : +451 215 215</h3>
+                    <h3 className="tracking-tiny font-bold text-[24px] text-[#252B42] mt-4">Phone ; 03172776177</h3>
+                    <h3 className="tracking-tiny font-bold text-[24px] text-[#252B42] mt-2">Fax : +317 277 6177</h3>
 
                     <div className="flex gap-8 mt-8 items-center">
                         <Image src="/twitter4.svg" alt="Twitter" width={30} height={30} />
