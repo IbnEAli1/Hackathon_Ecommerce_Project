@@ -11,8 +11,8 @@ function TopNav({ topNavBg }: { topNavBg?: string }) {
             <div className={`wraper  text-[#fafafa] items-center justify-between hidden sm:flex`} >
 
                 <div className="flex md:justify-between md:flex-row sm sm:items-center">
-                    <h6 className='p-[10px] h6 '>(225) 555-0118</h6>
-                    <h6 className='p-[10px] h6 '>michelle.rivera@example.com</h6>
+                    <h6 className='p-[10px] h6 '>(021) 317 277 6177</h6>
+                    <h6 className='p-[10px] h6 '>zbc@gmail.com</h6>
                 </div>
 
                 <div className="h6 hidden lg:block">Follow Us  and get a chance to win 80% off</div>

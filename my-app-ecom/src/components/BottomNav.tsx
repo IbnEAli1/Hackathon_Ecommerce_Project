@@ -21,7 +21,7 @@ function BottomNav({ linksNames, showOtherLinks = false, showShopLink = false, s
         <div className='h-1/2 bg-white '>
             <div className="h-full flex items-center justify-between wraper">
 
-                <h3 className='h3 w-[187px] text-[#252B42]'>Bandage</h3>
+                <h3 className='h3 w-[187px] font-bold text-center text-[#252B42]'>  <a href='/Home' target='_blank'>  Deli</a></h3>
 
                 <div className="flex justify-end w-full h-full">
                     {/* mobile nav */}

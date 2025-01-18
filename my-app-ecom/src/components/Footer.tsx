@@ -6,14 +6,13 @@ import ins from "@/app/assets/ins.png"
 import tw from "@/app/assets/tw.png"
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from "assert"
-
+import logo from "@/app/assets/logo.png"
 function Footer() {
     return (
 
-        <div className=" bg-[#fafafa]" >
+        <div className=" bg-[#fafafa] " >
             <div className='wraper flex flex-wrap sm:gap-[10px] justify-between  py-10 flex-col sm:flex-row sm:justify-between'>
-                <h1 className="h3 text-[#252B42] ">Bandage</h1>
+                <h1 className="h3 text-[#252B42] font-bold text-justify">Deli</h1>
                 <div className="flex gap-5 h-6">
                     <Image
                         src={fb}
@@ -65,7 +64,7 @@ function Footer() {
                             <Link href={"/business"} className='link text-[#737373]'>Business Marketing</Link>
                             <Link href={"/analytic"} className='link text-[#737373]'>User Analytic</Link>
                             <Link href={"/chats"} className='link text-[#737373]'>Live Chat</Link>
-                            <Link href={"/spport"} className='link text-[#737373]'>Unlimited Support</Link>
+                            <Link href={"/support"} className='link text-[#737373]'>Unlimited Support</Link>
 
                         </div>
                     </div>
@@ -97,21 +96,22 @@ function Footer() {
             </div >
 
 
-            <div className='bg-[#fafafa]'>
+            <div className='flex flex-col bg-[#fafafa] text-center items-center'>
                 <div className="wraper bg-[#fafafa] flex justify-center items-center lg:justify-start py-[25px] text-wrap">
-                    <h6 className="h6 text-[#737373] text-wrap">
+                <p className="flex flex-col text-center font-extrabold items-center px-6 sm:px-8 lg:px-32 md:px-16">
+                  
                     Made With Love By Akazbaba. 
                     <br /> All Rights Reserved by Akazbaba.
-                    </h6>
-                    <p className="flex flex-col text-center items-center px-6 sm:px-8 lg:px-32 md:px-16">
-                    {/* <a href="https://www.youtube.com/@akazbaba" target='_blank'>
+                   
+                    {/* <p className="flex flex-col text-center items-center px-6 sm:px-8 lg:px-32 md:px-16"> */}
+                    <a href="https://www.youtube.com/@akazbaba" target='_blank'>
                     <Image
                     src={logo}
                     alt='logo'
-                    height={100}
-                    width={100}
+                    height={50}
+                    width={50}
                     />
-                    </a> */}
+                    </a>
                 </p>
                 </div>
             </div>
