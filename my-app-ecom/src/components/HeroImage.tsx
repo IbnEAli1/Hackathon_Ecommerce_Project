@@ -20,7 +20,7 @@ function HeroImage() {
           <h2 className="h1 text-[#ffffff]">NEW COLLECTION</h2>
           <h4 className="h4 text-[#fafafa]">We know how large objects will act, <br /> but things on a small scale.</h4>
           <button
-            className="h3b bg-[#2DC071] w-[221px] h-[62px] rounded[5px] px-10 py-[15px] text-white"
+            className="h3b bg-[#2DC071] w-[221px] h-[62px] rounded[5px] px-10 py-[15px] text-white font-medium"
           >
             SHOP NOW
           </button>
