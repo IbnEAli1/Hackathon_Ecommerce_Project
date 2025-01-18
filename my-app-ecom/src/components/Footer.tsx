@@ -6,7 +6,7 @@ import ins from "@/app/assets/ins.png"
 import tw from "@/app/assets/tw.png"
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from "@/image/logo.png"
+import logo from "assert"
 
 function Footer() {
     return (
@@ -104,14 +104,14 @@ function Footer() {
                     <br /> All Rights Reserved by Akazbaba.
                     </h6>
                     <p className="flex flex-col text-center items-center px-6 sm:px-8 lg:px-32 md:px-16">
-                    <a href="https://www.youtube.com/@akazbaba" target='_blank'>
+                    {/* <a href="https://www.youtube.com/@akazbaba" target='_blank'>
                     <Image
                     src={logo}
                     alt='logo'
                     height={100}
                     width={100}
                     />
-                    </a>
+                    </a> */}
                 </p>
                 </div>
             </div>
