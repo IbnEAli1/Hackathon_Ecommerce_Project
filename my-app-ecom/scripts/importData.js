@@ -5,7 +5,7 @@ const client = createClient({
   dataset: 'production',
   useCdn: true,
   apiVersion: '2025-01-13',
-  token: 'skJxyZJ2GSJHr2xkbnjRuT0NfgdnzdqC5dL7OFc8E4jZmo4nmxbwK8UwBL9y9s1dihOFiPCOmHe5HlqStgZR1TMfAhggGM0vGZSaFF9rXoEbtoQjNVx6fRZXVzwne8DdQ0viKsK7xeSIT7n8FpBuXjwucvIuhitYKhuTmH9NermhHYjkdoAI',
+  token: 'skUMLoAlinpqE7NZHJANLnUujfreQx3iNXfuUGd1zOp7X6qKuYiInLwF996utq845c4qlcEJTeEKSKeJXgKEt5zAhmd8aSXHbrboB8KvZofNx9TvweuekaiZ32JCmWwbyPYV6qSDHKdnKvkCkoDivmYaTfFwaJrLIFRaQmHAuYWcfUSfotTK',
 });
 
 async function uploadImageToSanity(imageUrl) {
