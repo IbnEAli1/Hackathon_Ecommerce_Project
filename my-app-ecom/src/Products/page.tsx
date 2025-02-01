@@ -61,7 +61,7 @@ useEffect(() => {
 
 return(
     <div className="p-4">
-        <h2 className="text-center text-slate-800 "></h2>
+        <h2 className="text-center text-slate-800  "></h2>
 
     </div>
 )
