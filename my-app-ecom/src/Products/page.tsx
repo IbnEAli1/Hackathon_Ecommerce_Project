@@ -61,7 +61,16 @@ useEffect(() => {
 
 return(
     <div className="p-4">
-        <h2 className="text-center text-slate-800  "></h2>
+        <h2 className="text-center text-slate-800 mt-4 mb-4"> Products from API's Data</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {products.map(product) => (
+                <div
+                key={product._id}
+                className="g-white shodow-md" >
+
+                </div>
+            )}
+        </div>
 
     </div>
 )
