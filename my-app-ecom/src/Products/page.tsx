@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "@sanity/client";
 import Image from "next/image";
-import { sanityFetch } from "@/sanity/lib/live";
+import { product } from "@/sanity/schemaTypes/products";
+
 
 const sanity = sanityClient({
     projectId: "60jydi10",
@@ -59,6 +60,10 @@ const ProductCards: React.FC = () => {
         fetchProducts();
     }, []);
 
+    function yruncateDescrition(description: any): React.ReactNode | Iterable<React.ReactNode> {
+        throw new Error("Function not implemented.");
+    }
+
     return (
         <div className="p-4">
             <h2 className="text-center text-slate-800 mt-4 mb-4"> Products from API's Data</h2>
@@ -66,8 +71,39 @@ const ProductCards: React.FC = () => {
                 {products.map(product)=> (
                 <div
                     key={products._id}
-                    className="g-white shodow-md" >
-
+                    className="g-white shodow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
+                        <Image
+                        src={product.imageUr1}
+                        alt={product.title}
+                        width={300}
+                        height={300}
+                        className="w-full h-48 object-cover rounded-md"/>
+                        <div className="mt-4">
+                            <h2 className="text-lg font-semibold">{product.title}</h2>
+                            <p text-slate-800 mt-2 text-sm>{yruncateDescrition(product.description)}</p>
+                            <div className="flex justify-between items-center met-4">
+                                <div>
+                                    <p className="text-slate-600 font-bold">
+                                        {product.price}
+                                    </p>
+                                    {product.discountPercentage > 0 &&(
+                                        <p className="texr-sm text-green-600">
+                                            {product.discountPercentage}% OFF
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+                            <div className="mt-2 flex flex-wrap gap-2">
+                                {product.tags.map((tag: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | Iterable<React.ReactNode> | null | undefined, index: React.Key | null | undefined) =>(
+                                    <span
+                                    key={index}
+                                    className="text-xs bg-slate-400 text-blue rounded-full x-2 py-1">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                            {/*Add to cart funcationality*/}
+                        </div>
                 </div>
             )}
             </div>
