@@ -22,6 +22,7 @@ import a7 from "@/app/assets/product-images/c.png"
 import a8 from "@/app/assets/product-images/d.png"
 
 import b1 from "@/app/assets/product-images/b1.png"
+import ProductCards from "@/Products/page";
 
 
 
@@ -49,6 +50,7 @@ export default function Home() {
         <Carousel image={b1} bgColor={["bg-[#23856D]", "bg-[#2DC071]"]} textColor="text-white" />
         <NaturalUniverse />
         <FeaturedPosts />
+        <ProductCards />
       </main>
 
       <footer>
