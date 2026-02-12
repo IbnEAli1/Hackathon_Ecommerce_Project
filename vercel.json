@@ -1,6 +1,6 @@
 {
+  "framework": null,
   "buildCommand": "cd my-app-ecom && npm install && npm run build",
   "outputDirectory": "my-app-ecom/.next",
-  "framework": "nextjs",
-  "installCommand": "cd my-app-ecom && npm install"
+  "installCommand": "echo 'skip root install'"
 }
