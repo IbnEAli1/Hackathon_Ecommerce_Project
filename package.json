@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "axios": "^1.13.5"
-  }
+  },
+  "name": "claude",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbnEAli1/Hackathon_Ecommerce_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IbnEAli1/Hackathon_Ecommerce_Project/issues"
+  },
+  "homepage": "https://github.com/IbnEAli1/Hackathon_Ecommerce_Project#readme"
 }
